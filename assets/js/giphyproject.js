@@ -47,7 +47,7 @@ function getGifs() {
                 var ratingP = $("<p>");
                 ratingP.text("Rating:" + results[i].rating);
                 var image = $("<img>");
-                image.attr(results[i].images.preview);
+                image.attr('src', results[i].images.fixed_height.url);
                 gifDiv.append(ratingP);
                 gifDiv.append(image);
                 $("#giphyArea").prepend(gifDiv);
